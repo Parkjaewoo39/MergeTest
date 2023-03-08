@@ -12,6 +12,6 @@ namespace Merge
 
     public class Ruler 
     {
-
+        
     }
 }

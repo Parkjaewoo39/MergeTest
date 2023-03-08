@@ -10,8 +10,11 @@ namespace Merge
         }
     }
 
+
+    //Alpha Ruler add
     public class Ruler 
     {
-
+        private const float ONE_INCH = 2.54f;
+        public int Centimeter { get; set; }
     }
 }

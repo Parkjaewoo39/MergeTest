@@ -12,9 +12,22 @@ namespace Merge
 
 
     //Alpha Ruler add
-    public class Ruler 
+    public class Ruler
     {
         private const float ONE_INCH = 2.54f;
-        public int Centimeter { get; set; }
+        public int Centimeter { get; set; } = 0;
+        public float Inch
+        {
+            get { return Centimeter * ONE_INCH; }
+            private set { Centimeter = (int)(value / ONE_INCH); }
+
+        }
+        public Ruler(int Value) { Centimeter = Value; }
+
+        public void Run()
+        {
+            Console.WriteLine($"{this.Centimeter}cm는 {this.Inch}inch 입니다.");
+        }
+
     }
 }
